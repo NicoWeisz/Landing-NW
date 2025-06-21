@@ -6,21 +6,31 @@
   <title>Curso de Trading - Próxima Edición</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Inter', sans-serif;
-      background: url('https://images.unsplash.com/photo-1569025695034-eb6a8f25a4c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1612837017391-92b6dba2c967?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
       color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 2rem;
     }
 
     .container {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.7);
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.75);
       padding: 2rem;
-      border-radius: 10px;
+      border-radius: 12px;
+      text-align: center;
     }
 
     h1 {
@@ -32,13 +42,14 @@
     p {
       font-size: 1rem;
       color: #d0d6e1;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     .bold-uppercase {
       font-weight: 700;
       text-transform: uppercase;
       color: #ffffff;
+      margin-bottom: 1rem;
     }
 
     input[type="text"],
@@ -61,13 +72,13 @@
       font-size: 1rem;
       font-weight: 600;
       cursor: pointer;
+      margin-bottom: 1.5rem;
     }
 
     ul {
       list-style: none;
       padding: 0;
       text-align: left;
-      margin-top: 2rem;
     }
 
     li::before {
@@ -77,18 +88,16 @@
     }
 
     footer {
-      margin-top: 3rem;
+      margin-top: 2rem;
       text-align: center;
       font-weight: bold;
       color: #2ECC71;
     }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
+    @media (min-width: 768px) {
       .container {
-        padding: 1rem;
+        width: 80%;
+        max-width: 900px;
       }
     }
   </style>
@@ -99,8 +108,8 @@
     <p>He logrado resumir 6 años de aprendizaje en este curso práctico de trading desde cero para que tengas una curva de aprendizaje rápida sin errores. Si ya tenés algo de conocimiento en el mundo del trading pero querés capitalizarte rápido, el curso un poco más avanzado de índices sintéticos es ideal para vos.</p>
     <p class="bold-uppercase">ACTUALMENTE EL CURSO ESTÁ CERRADO, PERO PRONTO ABRIMOS UNA NUEVA EDICIÓN.</p>
     <p>Dejá tu correo para ser el primero en enterarte y obtener un descuento.</p>
-    <form action="https://formspree.io/f/xgvy1qpr" method="POST" onsubmit="setTimeout(() => window.location.href = 'gracias-4.html', 100); return true;">
-      <input type="text" name="nombre" placeholder="Nombre" required />
+    <form action="https://formspree.io/f/xgvyIqpr" method="POST" onsubmit="setTimeout(() => window.location.href = 'gracias-4.html', 100); return true;">
+      <input type="text" name="nombre" placeholder="Nombre" />
       <input type="email" name="email" placeholder="Correo electrónico" required />
       <button type="submit">Avisame cuando abra</button>
     </form>
