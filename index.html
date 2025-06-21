@@ -9,20 +9,15 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: url('https://cdn.midjourney.com/00df8c9a-e0ef-4a84-8c82-fb98e4bc5fa3/0_2.webp') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1569025695034-eb6a8f25a4c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       padding: 2rem;
-      min-height: 100vh;
     }
 
     .container {
-      max-width: 500px;
-      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
       background-color: rgba(0, 0, 0, 0.7);
       padding: 2rem;
       border-radius: 10px;
@@ -76,10 +71,9 @@
     }
 
     li::before {
-      content: '\2714';
+      content: '✔';
       margin-right: 0.5rem;
       color: #2ECC71;
-      font-weight: bold;
     }
 
     footer {
@@ -93,10 +87,8 @@
       body {
         padding: 1rem;
       }
-
       .container {
-        width: 100%;
-        padding: 1.5rem;
+        padding: 1rem;
       }
     }
   </style>
@@ -105,10 +97,10 @@
   <div class="container">
     <h1>Aprendé Trading desde cero y lográ una capitalización rápida con los índices sintéticos</h1>
     <p>He logrado resumir 6 años de aprendizaje en este curso práctico de trading desde cero para que tengas una curva de aprendizaje rápida sin errores. Si ya tenés algo de conocimiento en el mundo del trading pero querés capitalizarte rápido, el curso un poco más avanzado de índices sintéticos es ideal para vos.</p>
-    <p class="bold-uppercase">Actualmente el curso está cerrado, pero pronto abrimos una nueva edición.</p>
+    <p class="bold-uppercase">ACTUALMENTE EL CURSO ESTÁ CERRADO, PERO PRONTO ABRIMOS UNA NUEVA EDICIÓN.</p>
     <p>Dejá tu correo para ser el primero en enterarte y obtener un descuento.</p>
-    <form action="https://formspree.io/f/xgvylqpr" method="POST" onsubmit="setTimeout(() => window.location.href = 'gracias-4.html', 100); return true;">
-      <input type="text" name="nombre" placeholder="Nombre" />
+    <form action="https://formspree.io/f/xgvy1qpr" method="POST" onsubmit="setTimeout(() => window.location.href = 'gracias-4.html', 100); return true;">
+      <input type="text" name="nombre" placeholder="Nombre" required />
       <input type="email" name="email" placeholder="Correo electrónico" required />
       <button type="submit">Avisame cuando abra</button>
     </form>
@@ -125,4 +117,3 @@
   </footer>
 </body>
 </html>
-
