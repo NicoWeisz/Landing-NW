@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: url('https://raw.githubusercontent.com/NicoWeisz/Landing-NW/main/bg-trading.jpg') no-repeat center center fixed;
+      background: url('https://i.ibb.co/MRMZ9C6/bg-trading-dark.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       display: flex;
@@ -18,13 +18,12 @@
       justify-content: center;
       padding: 2rem;
       min-height: 100vh;
-      backdrop-filter: brightness(0.6);
     }
 
     .container {
       max-width: 500px;
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.65);
       padding: 2rem;
       border-radius: 10px;
     }
@@ -57,4 +56,55 @@
       font-size: 1rem;
     }
 
-    button
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #2ECC71;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    li::before {
+      content: '✔';
+      margin-right: 0.5rem;
+      color: #2ECC71 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Aprendé Trading desde cero y lográ una capitalización rápida con los índices sintéticos</h1>
+    <p>He logrado resumir 6 años de aprendizaje en este curso práctico de trading desde cero para que tengas una curva de aprendizaje rápida sin errores. Si ya tenés algo de conocimiento en el mundo del trading pero querés capitalizarte rápido, el curso un poco más avanzado de índices sintéticos es ideal para vos.</p>
+    <p class="bold-uppercase">Actualmente el curso está cerrado, pero pronto abrimos una nueva edición.</p>
+    <p>Dejá tu correo para ser el primero en enterarte y obtener un descuento.</p>
+
+    <form action="https://formspree.io/f/xgvylqpr" method="POST" onsubmit="setTimeout(() => window.location.href = 'gracias-4.html', 100); return true;">
+      <input type="text" name="nombre" placeholder="Nombre" />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <button type="submit">Avisame cuando abra</button>
+    </form>
+
+    <ul>
+      <li>Aprendé desde cero o mejorá tu operativa actual</li>
+      <li>Acceso a clases grabadas + sesiones en vivo</li>
+      <li>Comunidad privada de alumnos</li>
+      <li>Apoyo personalizado y estrategias comprobadas</li>
+    </ul>
+    <p style="margin-top: 2rem; font-weight: 600;">Ya son más de <span style="color: #2ECC71;">600 alumnos activos</span> aprendiendo y aplicando lo que enseño.</p>
+  </div>
+  <footer style="margin-top: 3rem; text-align: center; font-weight: bold; color: #2ECC71;">
+    NW TRADING
+  </footer>
+</body>
+</html>
